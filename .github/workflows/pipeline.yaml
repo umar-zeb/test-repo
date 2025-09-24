@@ -1,0 +1,13 @@
+name: Sample Print Pipeline
+
+on: [push]
+
+jobs:
+  print_module:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print module message
+        run: |
+          echo "✨ This is a module. ✨"
+          echo "----------------------"
+          echo "This will be used as a base for many pipelines"
